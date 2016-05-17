@@ -1,0 +1,30 @@
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\bin\Debug\BruTile.dll.config
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\bin\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\bin\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\obj\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\brutile-39476\trunk\BruTile\obj\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\bin\Debug\BruTile.dll.config
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\bin\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\bin\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\obj\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\Temp\brutile-39476\trunk\BruTile\obj\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll.config
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 07 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll.config
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll.config
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\bin\Debug\BruTile.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\BruTile\obj\Debug\BruTile.pdb

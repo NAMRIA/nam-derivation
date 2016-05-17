@@ -1,0 +1,18 @@
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\bin\Debug\ProjNet.xml
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\bin\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\bin\Debug\ProjNet.pdb
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\obj\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ProjNET-34175\SharpMap.CoordinateSystems\obj\Debug\ProjNet.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.xml
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\obj\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 22 2010]\SharpMapSource\ProjNet\obj\Debug\ProjNet.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.xml
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\bin\Debug\ProjNet.pdb
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\obj\Debug\ProjNet.dll
+D:\Documents and Settings\ghelo\Desktop\ToolSet [MAR 24 2010]\SharpMapSource\ProjNet\obj\Debug\ProjNet.pdb

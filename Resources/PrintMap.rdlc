@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>bc3e384c-0a7f-437d-be04-61efdd71ccd2</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ReportSource_Data">
+      <Fields>
+        <Field Name="project_no">
+          <DataField>project_no</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="city">
+          <DataField>city</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="province">
+          <DataField>province</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="region">
+          <DataField>region</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="island">
+          <DataField>island</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="urban_code">
+          <DataField>urban_code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="scale">
+          <DataField>scale</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="date_surveyed">
+          <DataField>date_surveyed</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="date_approved">
+          <DataField>date_approved</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="date_rec_obs">
+          <DataField>date_rec_obs</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="remarks">
+          <DataField>remarks</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="name_approved">
+          <DataField>name_approved</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pos_approved">
+          <DataField>pos_approved</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="name_noted">
+          <DataField>name_noted</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pos_noted">
+          <DataField>pos_noted</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="map">
+          <DataField>map</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="municipality">
+          <DataField>municipality</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ReportSource</rd:DataSetName>
+        <rd:TableName>Data</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Image Name="image1">
+        <Source>Database</Source>
+        <Value>=Fields!map.Value</Value>
+        <MIMEType>image/bmp</MIMEType>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.24654in</Top>
+        <Left>0.22569in</Left>
+        <Height>7.98611in</Height>
+        <Width>9.79166in</Width>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Rectangle Name="rectangle1">
+        <ReportItems>
+          <Textbox Name="textbox23">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!remarks.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>6.625in</Top>
+            <Left>0.28125in</Left>
+            <Height>1.125in</Height>
+            <Width>2.125in</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!pos_approved.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>5.53125in</Top>
+            <Left>0.90625in</Left>
+            <Height>0.15625in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>I certify that the information contained herein are true and correct, and was prepared with my full supervision.
+
+This map shall be used in the determination of local transformation parameters. For reference purposes only.</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>6pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>3.625in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.75in</Height>
+            <Width>2.25in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="scale">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!scale.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>scale</rd:DefaultName>
+            <Top>3.25in</Top>
+            <Left>0.65625in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="urban_code">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!urban_code.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>urban_code</rd:DefaultName>
+            <Top>3in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="city">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!municipality.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>city</rd:DefaultName>
+            <Top>2in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="province">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!province.Value)</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>province</rd:DefaultName>
+            <Top>2.25in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="region">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!region.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>region</rd:DefaultName>
+            <Top>2.5in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="island">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!island.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>island</rd:DefaultName>
+            <Top>2.75in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="project_no">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!project_no.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>project_no</rd:DefaultName>
+            <Top>1.75in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PROJECT NO.</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>1.75in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>MUNICIPALITY</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PROVINCE</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.25in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>REGION</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.5in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>ISLAND</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>2.75in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>URBAN CODE</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>3in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Date Surveyed:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>4.5in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Date Approved:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>5in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Date Recovered &amp; Observed:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>4.75in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.375in</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!date_surveyed.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <Format>MM/dd/yyyy</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>4.5in</Top>
+            <Left>1.65625in</Left>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!date_approved.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <Format>MM/dd/yyyy</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>5in</Top>
+            <Left>1.65625in</Left>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!date_rec_obs.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                      <Format>MM/dd/yyyy</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>4.75in</Top>
+            <Left>1.65625in</Left>
+            <Height>0.25in</Height>
+            <Width>0.875in</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Noted by:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>5.875in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>0.625in</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Approved by:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>5.375in</Top>
+            <Left>0.15625in</Left>
+            <Height>0.25in</Height>
+            <Width>0.75in</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox21">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!pos_noted.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>6.01875in</Top>
+            <Left>0.90625in</Left>
+            <Height>0.15625in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!name_noted.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>5.875in</Top>
+            <Left>0.90625in</Left>
+            <Height>0.15625in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BottomBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </BottomBorder>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Remarks/other information:</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <Top>6.375in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.25in</Height>
+            <Width>1.375in</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!name_approved.Value, "ReportSource_Data")</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>7pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>5.375in</Top>
+            <Left>0.90625in</Left>
+            <Height>0.15625in</Height>
+            <Width>1.5in</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BottomBorder>
+                <Style>Solid</Style>
+              </BottomBorder>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>PROJECT CONTROL SCHEME</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>13pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.73611in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.5in</Height>
+            <Width>2in</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Recovery and Observation of Reference Monuments for PRS 92</Value>
+                    <Style>
+                      <FontFamily>Trebuchet MS</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.30556in</Top>
+            <Left>0.28125in</Left>
+            <Height>0.375in</Height>
+            <Width>2.25in</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="image2">
+            <Source>Embedded</Source>
+            <Value>northnavigator</Value>
+            <MIMEType>image/gif</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>0.06944in</Top>
+            <Left>1.03125in</Left>
+            <Height>0.625in</Height>
+            <Width>0.625in</Width>
+            <ZIndex>30</ZIndex>
+            <Style />
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>0.24654in</Top>
+        <Left>10.19444in</Left>
+        <Height>7.98611in</Height>
+        <Width>2.53125in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>8.5in</Height>
+    <Style />
+  </Body>
+  <Width>13in</Width>
+  <Page>
+    <PageHeight>8.5in</PageHeight>
+    <PageWidth>13in</PageWidth>
+    <InteractiveHeight>11in</InteractiveHeight>
+    <InteractiveWidth>8.5in</InteractiveWidth>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="northnavigator">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>R0lGODlhZABkAIcAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAP8ALAAAAABkAGQAAAj/AAMIHEiwoMGDCBMqXMiwocOHECNKnEixIkQAAAZitMixY0eMGQNs9EiypEOQAkeaXMmSIMiMKlvKLLnx5cybJGuixMmz4sidPYNeDAlUqNGFKmMeXcq0qdOnLENCnaqRKlWlVplizXq0KFejNr8uDSu258uzW8t+VCpVpFe1E72ibesWblyiKZNq3PnWbsKfb+nmxesXaVWRBwUjrpu2MNG2giO7JFx48mKXk9kapFyZ8+GUdT8XrFmZseLLMCEnXnz6K8y8m0G79TxbdmurlOWy/mlZKmm4v/fqffwadmjbwC9XDeubb/PYt58Gxzy3eubNxV0fxzxbr/HaiRtL/0eMlXh352SFb7+aHShx34O7j4Yffaxsy+SVQ05tnrr21jY511tqCBHYEmDPrRYdegGCJh5twqXHEILfQVcgSs2dtdx6hwFYn0LvcQgbXdYNhtZe6o0m4oonvabTfBiaOFeEGlYYn4MSnhhRgAZWVyN2Ps4Y5JA0fggjgYo1eOOG55HFX47gzWcRc41Nd2N7OpInIXIXcpTUg8odideMWoJ4H5BbTpihmbdhuB9/8hV4ppji5RRmfFCiCJiCrmV3HJmocRllflyRJhdvPIIXWXFGgtVXUW42OaeJZVn5nZBP+tmhWpqGZqiA8knW6FiaGribi5mROGmhWKqG55zurZv6n2j3xTgpfaM2pZNk19HqoKxi2cpdir4K2xlni6qKX67s1bpabLYxi1t/0Kq4Z2nhPfaslMBie2VMby7p7V/ulWjjuCCmR2Kd6F4YZLse/QhvvOzOO5S09naZL0378tvvR/8GLHC/8g7ckJv4EpygwQf3xTBSaT4MccL7fimxmgVfnG29Gnfs8ccghyzyyCSXbPLJKKescscBAQA7</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="legend">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>aff7b207-0eca-4552-ac12-ed407847a9ec</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

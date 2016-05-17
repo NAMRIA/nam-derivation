@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <datasource>
+    <server name="(local)\sqlexpress" />
+    <database name="prs92" />
+  </datasource>
+  <printing>
+    <approved name="Me" position="{approved by position}" />
+    <noted name="{noted by}" position="{noted by position}" />
+  </printing>
+  <validation>
+    <enable value="true" />
+    <hash value="619EEA0294574270945AEC85C32B28788B0528F9" />
+  </validation>
+</config>
